@@ -53,6 +53,7 @@ header ul li {
     opacity: 1; /* Quando a classe active é adicionada, a div fica com opacidade 1 (totalmente visível) */
     visibility: visible; /* Torna a div visível quando a classe active é adicionada */
     transition-delay: 0s; /* Remove o atraso na transição */
+    fill:none;
 }
 
 @media (max-width: 768px) {
