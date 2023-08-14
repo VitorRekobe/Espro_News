@@ -5,6 +5,8 @@
 
 body{
     background-image: url(fundo\ jornal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
@@ -52,6 +54,10 @@ header ul li {
     opacity: 0; /* Inicia invisível */
     visibility: hidden; /* Esconde a div (também influencia no layout) */
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Adiciona transições */
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    height: auto;
 }
 
 #DivHamburgue.active {
@@ -70,7 +76,6 @@ header ul li {
         width: 40%;
         display: flex;
         align-items: center;     
-        padding-top: 5%;
     }
 
     .NoticiaDiv{
