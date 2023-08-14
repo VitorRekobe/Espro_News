@@ -75,7 +75,13 @@ header ul li {
     #DivHamburgue{
         width: 40%;
         display: flex;
-        align-items: center;     
+        /* align-items: center;      */
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+    #DivHamburgue h1{
+        font-size: 20px;
     }
 
     .NoticiaDiv{
