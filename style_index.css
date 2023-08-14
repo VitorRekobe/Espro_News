@@ -4,13 +4,13 @@
 }
 
 body{
-    background-image: url(fundo\ jornal.png);
+    background-image: url(imagens/fundo\ jornal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header{
-    background-color: #343334;
+    background-color: #844c1f;
 }
 
 header ul {
@@ -40,7 +40,8 @@ header ul li {
 }
 
 #DivHamburgue{
-    background-color: #343334;
+    /* background-color: #343334; */
+    background-color: #844c1f;
     color: white; 
     height: 50%;
     border-radius:0px 0px 0px 30px;
@@ -75,7 +76,6 @@ header ul li {
     #DivHamburgue{
         width: 40%;
         display: flex;
-        /* align-items: center;      */
         padding-left: 5%;
         padding-bottom: 5%;
     }
