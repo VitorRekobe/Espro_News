@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(imagens/fundo\ jornal.png);
+    background-size: cover;
+}
+
+header{
+    background-color: #844C1F;
+}
+
+#logo_Titulo{
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+    min-height: 70px;
+}
+
+header ul li {
+    list-style-type: none;
+    color: #f7f7f8;
+}
+
+.NoticiaDiv{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+}
+
+.NoticiaDiv img{
+    width: 100%;
+}
+
+#DivHamburgue{
+    /* background-color: #343334; */
+    background-color: #844c1f;
+    color: white; 
+    height: 50%;
+    border-radius:0px 0px 0px 30px;
+    z-index: 3;
+    position: absolute;
+    right: 0px;
+    min-width: 20%;
+    flex-direction: column;
+    align-items: right;
+    padding-left: 2%;
+    opacity: 0; /* Inicia invisível */
+    visibility: hidden; /* Esconde a div (também influencia no layout) */
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Adiciona transições */
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    height: auto;
+}
+
+#DivHamburgue.active {
+    opacity: 1; /* Quando a classe active é adicionada, a div fica com opacidade 1 (totalmente visível) */
+    visibility: visible; /* Torna a div visível quando a classe active é adicionada */
+    transition-delay: 0s; /* Remove o atraso na transição */
+}
+
+@media (max-width: 768px) {
+    #DivHamburgue h1 {
+        font-size: 16px; /* Tamanho de fonte menor para dispositivos móveis */
+        margin-bottom: 5px;
+    }
+
+    #DivHamburgue{
+        width: 40%;
+        display: flex;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+    #DivHamburgue h1{
+        font-size: 20px;
+    }
+
+    .NoticiaDiv{
+        width: 100%;
+    }
+}
